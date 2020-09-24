@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="survey-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <nav>
-      <a href="index.html"><img src="#" alt="logo's restaurant" /></a>
+  <body class="body-style">
+    <nav class="main-style">
+      <a href="index.html"
+        ><img src="/images/wine.svg" alt="logo's restaurant"
+      /></a>
       <ul>
-        <li><p>Menu</p></li>
-        <li><p>Reservation</p></li>
-        <li><p>Location</p></li>
-        <li><p>Contact</p></li>
+        <a href="#"><li>Menu</li></a>
+        <a href="#"><li>Reservation</li></a>
+        <a href="#"><li>Location</li></a>
+        <a href="#"><li>Contact</li></a>
       </ul>
     </nav>
-    <main>
+    <main class="main-style">
       <header>
         <h1 id="title">Survey Form</h1>
         <p id="description">
@@ -25,138 +39,173 @@
         </p>
       </header>
       <form id="survey-form">
-        <label for="name" id="name-label">
-          Name<input
+        <div>
+          <label for="name" id="name-label" class="survey"> Name</label>
+          <input
             id="name"
             type="text"
             name="name"
-            placeholder="Enter your name"
+            placeholder="enter your name"
             required
           />
-        </label>
-        <label for="email" id="email-label">
-          E-mail<input
+        </div>
+        <div>
+          <label for="email" id="email-label" class="survey"> E-mail</label>
+          <input
             id="email"
             type="email"
             name="email"
             placeholder="forexample@example.com"
             required
           />
-        </label>
-        <label for="number" id="number-label">
-          How many times have you come?<input
+        </div>
+        <div>
+          <label for="number" id="number-label" class="survey">
+            How many times have you come?</label
+          >
+          <input
             id="number"
             type="number"
+            name="number"
             min="1"
             max="100"
-            name="number"
             placeholder="enter the number"
             required
           />
-        </label>
-        <label for="dropdown">
-          What is the name of the waiter/waitress who served you tonight?</label
-        >
-        <select name="dropdown" id="dropdown">
-          <option value="">Select the name</option>
-          <option value="Sandra">Sandra</option>
-          <option value="Anne">Anne</option>
-          <option value="Mari">Mari</option>
-          <option value="Juli">Juli</option>
-          <option value="Jose">José</option>
-          <option value="Jorge">Jorge</option>
-          <option value="Angela">Angela</option>
-        </select>
-        <div class="radio-boxes">
+        </div>
+        <div>
+          <label for="dropdown" class="survey">
+            What is the name of the waiter/waitress who served you
+            tonight?</label
+          >
+          <select name="dropdown" id="dropdown" class="select-name">
+            <option disabled selected value>select the name</option>
+            <option value="Sandra">Sandra</option>
+            <option value="Anne">Anne</option>
+            <option value="Mari">Mari</option>
+            <option value="Juli">Juli</option>
+            <option value="Jose">José</option>
+            <option value="Jorge">Jorge</option>
+            <option value="Angela">Angela</option>
+          </select>
+        </div>
+        <div class="service">
           <p>How satisfied are you with the service?</p>
-          <label for="service">
+          <label for="service" class="service-categories">
             <input
               id="service"
               type="radio"
               name="satisfied"
               value="satisfied"
-            />Very satisfied
+            />
+            Very satisfied
           </label>
-          <label for="service">
+          <label for="service" class="service-categories">
             <input
               id="service"
               type="radio"
               name="satisfied"
               value="satisfied"
-            />Satisfied
+            />
+            Satisfied
           </label>
-          <label for="service">
+          <label for="service" class="service-categories">
             <input
               id="service"
               type="radio"
               name="satisfied"
               value="satisfied"
-            />Neutral
+            />
+            Neutral
           </label>
-          <label for="service">
+          <label for="service" class="service-categories">
             <input
               id="service"
               type="radio"
               name="satisfied"
               value="satisfied"
-            />Unsatisfied
+            />
+            Unsatisfied
           </label>
-          <label for="service">
+          <label for="service" class="service-categories">
             <input
               id="service"
               type="radio"
               name="satisfied"
               value="satisfied"
-            />Very unsatisfied
+            />
+            Very unsatisfied
           </label>
         </div>
-        <div>
+        <div class="categories">
           <p>In which of these categories we should impove?</p>
-          <label for="categories">
+          <label for="categories" class="service-categories">
             <input
               id="categories"
               type="checkbox"
               name="categories"
               value="categories"
-            />Food
+            />
+            Food
           </label>
-          <label for="categories">
+          <label for="categories" class="service-categories">
             <input
               id="categories"
               type="checkbox"
               name="categories"
               value="categories"
-            />Service
+            />
+            Service
           </label>
-          <label for="categories">
+          <label for="categories" class="service-categories">
             <input
               id="categories"
               type="checkbox"
               name="categories"
               value="categories"
-            />Drinks
+            />
+            Drinks
           </label>
-          <label for="categories">
+          <label for="categories" class="service-categories">
             <input
               id="categories"
               type="checkbox"
               name="categories"
               value="categories"
-            />Atmosphere
+            />
+            Atmosphere
+          </label>
+          <label for="categories" class="service-categories">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Cleanliness
           </label>
         </div>
-        <div>
-          <p>So, what do you think about our restaurant?</p>
-          <label for="opinion"></label>
-          <textarea id="opinion" name="opinion" rows="5" cols="33">Write your opinion
-          </textarea> 
+        <div class="survey">
+          <p class="text-opinion">
+            So, what do you think about our restaurant?
+          </p>
+          <textarea
+            id="opinion"
+            name="opinion"
+            rows="5"
+            cols="33"
+            class="opinion"
+          >
+Tell us your opinion.
+          </textarea>
         </div>
-        <label for="submit">
-          <button
-            id="submit"
-            type="submit"
-            >Submit</button>
-        </label>
+        <div class="survey submit">
+          <label for="submit">
+            <button id="submit" type="submit" class="text-submit">
+              Submit
+            </button>
+          </label>
+        </div>
       </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

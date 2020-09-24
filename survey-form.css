@@ -1,22 +1,56 @@
-body {
+* {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --border-radius: 5px;
+  --border-width: 2px;
+  --border-color: #2c3258;
+  --font-color: #d3d4d6;
+  --font-family: "Playfair Display", serif;
+  --font-lato: "Lato", sans-serif;
+}
+body {
+  line-height: 1.3;
   font-size: 1 rem;
+  color: var(--font-color);
+  }
+.body-style {
+  display: grid;
+  background-image: url(/images/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-style {
+  background-color: rgba(0, 0, 0, 0.7); 
 }
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 10px;
 }
-nav > ul {
+nav >ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+}
+nav img{
+  width: 45px;
+  height: auto;
+  margin: 10px 0px 0px 20px;
+}
+a {
+  text-decoration: none;
 }
 li {
   margin: 10px;
-}
-li > p {
-  margin: 0px;
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: 1.1rem;
 }
 main {
   display: flex;
@@ -25,8 +59,11 @@ main {
   align-items: center;
 }
 header {
-  font-size: 1.5rem;
+  margin: 20px;
+  font-size: 2rem;
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: #e4b61a;
 }
 h1 {
   margin: 0px;
@@ -35,4 +72,102 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  width: 70%;
+}
+.survey {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin: 20px 0px 10px 0px;
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+}
+form p {
+  margin: 20px 0px 10px 0px;
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+}
+select,
+textarea {
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  color: var(--font-color);
+  font-family: var(--font-lato);
+  font-size: 16px;
+}
+.select-name {
+  width: 100%;
+  height: 45px;
+  padding: 5px;
+}
+input:placeholder-shown {
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  width: 100%;
+  height: 45px;
+}
+input::placeholder {
+  color: var(--font-color);
+  font-size: 16px;
+  font-family: var(--font-lato);
+}
+input {
+  padding: 7px;
+}
+.service-categories {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.text-opinion {
+  margin: 30px 0px 5px 0px;
+  font-size: 1.2rem;
+}
+.opinion {
+  font-family: var(--font-lato);
+  font-size: 1rem;
+  padding: 7px;
+}
+.submit {
+  text-align: center;
+}
+button {
+  background-color: #e4b61a;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: #e4b61a;
+}
+.text-submit {
+  width: 150px;
+  height: 40px;
+  font-family: var(--font-lato);
+  font-size: 1.25rem;
+  color: white;
+}
+@media (max-width: 550px) {
+  .body-style {
+  background-size: cover;
+  }
+  header {
+    font-size: 1.5rem;
+  }
+  form {
+    width: 85%;
+  }
+  .service,
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .service label{
+    margin: 5px 0px 5px 0px;
+    padding:0px;
+  }
+  .categories label {
+    margin: 5px 0px 5px 0px;
+    padding:0px;
+  }
 }
