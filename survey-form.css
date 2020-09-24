@@ -163,10 +163,11 @@ footer img{
 .my-name{
   display: flex;
   flex-direction: column-reverse;
+  justify-content:center;
   color: var(--font-color);
-  margin:0px;
+  margin:10px 0px;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .body-style {
   background-size: cover;
   }
