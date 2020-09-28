@@ -6,24 +6,25 @@
 :root {
   --border-radius: 5px;
   --border-width: 2px;
-  --border-color: #2c3258;
+  --border-color: #191b29;
   --font-color: #d3d4d6;
-  --font-family: "Playfair Display", serif;
-  --font-lato: "Lato", sans-serif;
+  --answer-color: #696262;
+  --font-family-1: "Playfair Display", serif;
+  --font-family-2: "Lato", sans-serif;
 }
 body {
   line-height: 1.3;
   font-size: 1 rem;
   color: var(--font-color);
-  }
+}
 .body-style {
   display: grid;
   background-image: url(/images/restaurant.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 .main-style {
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.75);
 }
 nav {
   display: flex;
@@ -31,14 +32,14 @@ nav {
   align-items: center;
   padding: 10px 10px 0px 10px;
 }
-nav >ul {
+nav > ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
   margin: 10px;
   padding: 0px;
 }
-nav img{
+nav img {
   width: 45px;
   height: auto;
   margin: 10px 0px 0px 20px;
@@ -49,10 +50,10 @@ a {
 li {
   margin: 10px;
   color: var(--font-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family-1);
   font-size: 1.1rem;
 }
-main {
+.surv-form-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,68 +73,62 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
 }
 .survey {
   display: flex;
   flex-direction: column;
 }
-label {
-  margin: 20px 0px 10px 0px;
-  font-family: var(--font-family);
-  font-size: 1.25rem;
-}
-form p {
-  margin: 20px 0px 10px 0px;
-  font-family: var(--font-family);
-  font-size: 1.25rem;
-}
-select,
-textarea {
-  border-radius: var(--border-radius);
-  border-width: var(--border-width);
-  border-color: var(--border-color);
-  color: var(--font-color);
-  font-family: var(--font-lato);
-  font-size: 16px;
-}
-.select-name {
-  width: 100%;
-  height: 45px;
-  padding: 5px;
-}
-input:placeholder-shown {
-  border-width: var(--border-width);
-  border-radius: var(--border-radius);
-  border-color: var(--border-color);
-  width: 100%;
-  height: 45px;
+.question {
+  margin: 20px 10px 10px 0px;
+  font-family: var(--font-family-1);
+  font-size: 1.35rem;
 }
 input::placeholder {
-  color: var(--font-color);
-  font-size: 16px;
-  font-family: var(--font-lato);
+  color: var(--answer-color);
+  font-family: var(--font-family-2);
 }
-input {
+select{
+  color: var(--answer-color);
+}
+.answer {
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+}
+.answer-size {
+  width: 70%;
+  height: 45px;
   padding: 7px;
+  font-size: 16px;
 }
-.service-categories {
-  padding: 8px;
+.check-radio {
+  display: flex;
+  flex-direction: column;
+}
+.serv-categ {
+  padding: 0px;
   margin-right: 10px;
-  font-size: 1rem;
 }
-.text-opinion {
-  margin: 30px 0px 5px 0px;
-  font-size: 1.2rem;
+.serv-categ-font {
+  font-family: var(--font-family-1);
+  font-size: 1.1rem;
 }
 .opinion {
-  font-family: var(--font-lato);
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
   font-size: 1rem;
   padding: 7px;
+}
+textarea::placeholder{
+  color: var(--answer-color);
+  font-family: var(--font-family-2);
 }
 .submit {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 button {
   background-color: #e4b61a;
@@ -141,53 +136,44 @@ button {
   border-width: var(--border-width);
   border-color: #e4b61a;
 }
-.text-submit {
+.word-submit {
   width: 150px;
   height: 40px;
   font-family: var(--font-lato);
   font-size: 1.25rem;
   color: white;
 }
-footer{
+footer {
   background-color: black;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer img{
+footer img {
   width: 45px;
   height: auto;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
-.my-name{
+.my-name {
   display: flex;
   flex-direction: column-reverse;
-  justify-content:center;
+  justify-content: center;
   color: var(--font-color);
-  margin:10px 0px;
+  margin: 10px 0px;
 }
 @media (max-width: 600px) {
   .body-style {
-  background-size: cover;
+    background-size: cover;
   }
   header {
     font-size: 1.5rem;
+    margin-bottom: 0px;
   }
   form {
-    width: 85%;
+    width: 80%;
   }
-  .service,
-  .categories {
-    display: flex;
-    flex-direction: column;
-  }
-  .service label{
-    margin: 5px 0px 5px 0px;
-    padding:0px;
-  }
-  .categories label {
-    margin: 5px 0px 5px 0px;
-    padding:0px;
+  .question{
+    font-size:1.05rem;
   }
 }

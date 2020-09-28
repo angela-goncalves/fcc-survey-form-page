@@ -30,7 +30,7 @@
         <a href="#"><li>Contact</li></a>
       </ul>
     </nav>
-    <main class="main-style">
+    <main class="main-style surv-form-main">
       <header>
         <h1 id="title">Survey Form</h1>
         <p id="description">
@@ -39,46 +39,49 @@
         </p>
       </header>
       <form id="survey-form">
-        <div>
-          <label for="name" id="name-label" class="survey"> Name</label>
+        <div class="survey">
+          <label for="name" id="name-label" class="question"> Name</label>
           <input
             id="name"
             type="text"
             name="name"
+            class="answer answer-size"
             placeholder="enter your name"
             required
           />
         </div>
-        <div>
-          <label for="email" id="email-label" class="survey"> E-mail</label>
+        <div class="survey">
+          <label for="email" id="email-label" class="question"> E-mail</label>
           <input
             id="email"
             type="email"
             name="email"
+            class="answer answer-size"
             placeholder="forexample@example.com"
             required
           />
         </div>
-        <div>
-          <label for="number" id="number-label" class="survey">
+        <div class="survey">
+          <label for="number" id="number-label" class="question">
             How many times have you come?</label
           >
           <input
             id="number"
             type="number"
             name="number"
+            class="answer answer-size"
             min="1"
             max="100"
             placeholder="enter the number"
             required
           />
         </div>
-        <div>
-          <label for="dropdown" class="survey">
+        <div class="survey">
+          <label for="dropdown" class="question">
             What is the name of the waiter/waitress who served you
             tonight?</label
           >
-          <select name="dropdown" id="dropdown" class="select-name">
+          <select name="dropdown" id="dropdown" class="answer-size answer">
             <option disabled selected value>select the name</option>
             <option value="Sandra">Sandra</option>
             <option value="Anne">Anne</option>
@@ -89,9 +92,9 @@
             <option value="Angela">Angela</option>
           </select>
         </div>
-        <div class="service">
-          <p>How satisfied are you with the service?</p>
-          <label for="service" class="service-categories">
+        <div class="check-radio">
+          <p class="question">How satisfied are you with the service?</p>
+          <label for="service" class="serv-categ serv-categ-font">
             <input
               id="service"
               type="radio"
@@ -100,7 +103,7 @@
             />
             Very satisfied
           </label>
-          <label for="service" class="service-categories">
+          <label for="service" class="serv-categ serv-categ-font">
             <input
               id="service"
               type="radio"
@@ -109,7 +112,7 @@
             />
             Satisfied
           </label>
-          <label for="service" class="service-categories">
+          <label for="service" class="serv-categ serv-categ-font">
             <input
               id="service"
               type="radio"
@@ -118,7 +121,7 @@
             />
             Neutral
           </label>
-          <label for="service" class="service-categories">
+          <label for="service" class="serv-categ serv-categ-font">
             <input
               id="service"
               type="radio"
@@ -127,7 +130,7 @@
             />
             Unsatisfied
           </label>
-          <label for="service" class="service-categories">
+          <label for="service" class="serv-categ serv-categ-font">
             <input
               id="service"
               type="radio"
@@ -137,9 +140,9 @@
             Very unsatisfied
           </label>
         </div>
-        <div class="categories">
-          <p>In which of these categories we should impove?</p>
-          <label for="categories" class="service-categories">
+        <div class="check-radio">
+          <p class="question">In which of these categories we should impove?</p>
+          <label for="categories" class="serv-categ serv-categ-font">
             <input
               id="categories"
               type="checkbox"
@@ -148,7 +151,7 @@
             />
             Food
           </label>
-          <label for="categories" class="service-categories">
+          <label for="categories" class="serv-categ serv-categ-font">
             <input
               id="categories"
               type="checkbox"
@@ -157,7 +160,7 @@
             />
             Service
           </label>
-          <label for="categories" class="service-categories">
+          <label for="categories" class="serv-categ serv-categ-font">
             <input
               id="categories"
               type="checkbox"
@@ -166,7 +169,7 @@
             />
             Drinks
           </label>
-          <label for="categories" class="service-categories">
+          <label for="categories" class="serv-categ serv-categ-font">
             <input
               id="categories"
               type="checkbox"
@@ -175,7 +178,7 @@
             />
             Atmosphere
           </label>
-          <label for="categories" class="service-categories">
+          <label for="categories" class="serv-categ serv-categ-font">
             <input
               id="categories"
               type="checkbox"
@@ -186,22 +189,18 @@
           </label>
         </div>
         <div class="survey">
-          <p class="text-opinion">
-            So, what do you think about our restaurant?
-          </p>
+          <p class="question">So, what do you think about our restaurant?</p>
           <textarea
-            id="opinion"
-            name="opinion"
+            class="opinion"
+            name="textarea"
             rows="5"
             cols="33"
-            class="opinion"
-          >
-Tell us your opinion.
-          </textarea>
+            placeholder="tell us your opinion"
+          ></textarea>
         </div>
         <div class="survey submit">
           <label for="submit">
-            <button id="submit" type="submit" class="text-submit">
+            <button id="submit" type="submit" class="word-submit">
               Submit
             </button>
           </label>
