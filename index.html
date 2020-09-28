@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="survey-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-style">
+    <nav class="main-style">
+      <a href="index.html"
+        ><img src="/images/wine.svg" alt="logo's restaurant"
+      /></a>
+      <ul>
+        <a href="#"><li>Menu</li></a>
+        <a href="#"><li>Reservation</li></a>
+        <a href="#"><li>Location</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <main class="main-style surv-form-main">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Help us to improve our service. Your opinion is the most important to
+          us.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="survey">
+          <label for="name" id="name-label" class="question"> Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="answer answer-size"
+            placeholder="enter your name"
+            required
+          />
+        </div>
+        <div class="survey">
+          <label for="email" id="email-label" class="question"> E-mail</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="answer answer-size"
+            placeholder="forexample@example.com"
+            required
+          />
+        </div>
+        <div class="survey">
+          <label for="number" id="number-label" class="question">
+            How many times have you come?</label
+          >
+          <input
+            id="number"
+            type="number"
+            name="number"
+            class="answer answer-size"
+            min="1"
+            max="100"
+            placeholder="enter the number"
+            required
+          />
+        </div>
+        <div class="survey">
+          <label for="dropdown" class="question">
+            What is the name of the waiter/waitress who served you
+            tonight?</label
+          >
+          <select name="dropdown" id="dropdown" class="answer-size answer">
+            <option disabled selected value>select the name</option>
+            <option value="Sandra">Sandra</option>
+            <option value="Anne">Anne</option>
+            <option value="Mari">Mari</option>
+            <option value="Juli">Juli</option>
+            <option value="Jose">José</option>
+            <option value="Jorge">Jorge</option>
+            <option value="Angela">Angela</option>
+          </select>
+        </div>
+        <div class="check-radio">
+          <p class="question">How satisfied are you with the service?</p>
+          <label for="service" class="serv-categ serv-categ-font">
+            <input
+              id="service"
+              type="radio"
+              name="satisfied"
+              value="satisfied"
+            />
+            Very satisfied
+          </label>
+          <label for="service" class="serv-categ serv-categ-font">
+            <input
+              id="service"
+              type="radio"
+              name="satisfied"
+              value="satisfied"
+            />
+            Satisfied
+          </label>
+          <label for="service" class="serv-categ serv-categ-font">
+            <input
+              id="service"
+              type="radio"
+              name="satisfied"
+              value="satisfied"
+            />
+            Neutral
+          </label>
+          <label for="service" class="serv-categ serv-categ-font">
+            <input
+              id="service"
+              type="radio"
+              name="satisfied"
+              value="satisfied"
+            />
+            Unsatisfied
+          </label>
+          <label for="service" class="serv-categ serv-categ-font">
+            <input
+              id="service"
+              type="radio"
+              name="satisfied"
+              value="satisfied"
+            />
+            Very unsatisfied
+          </label>
+        </div>
+        <div class="check-radio">
+          <p class="question">In which of these categories we should impove?</p>
+          <label for="categories" class="serv-categ serv-categ-font">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Food
+          </label>
+          <label for="categories" class="serv-categ serv-categ-font">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Service
+          </label>
+          <label for="categories" class="serv-categ serv-categ-font">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Drinks
+          </label>
+          <label for="categories" class="serv-categ serv-categ-font">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Atmosphere
+          </label>
+          <label for="categories" class="serv-categ serv-categ-font">
+            <input
+              id="categories"
+              type="checkbox"
+              name="categories"
+              value="categories"
+            />
+            Cleanliness
+          </label>
+        </div>
+        <div class="survey">
+          <p class="question">So, what do you think about our restaurant?</p>
+          <textarea
+            class="opinion"
+            name="textarea"
+            rows="5"
+            cols="33"
+            placeholder="tell us your opinion"
+          ></textarea>
+        </div>
+        <div class="survey submit">
+          <label for="submit">
+            <button id="submit" type="submit" class="word-submit">
+              Submit
+            </button>
+          </label>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="my-name">
+        <p>Angela G.</p>
+        <a href="index.html"
+          ><img src="/images/wine.svg" alt="logo's restaurant"
+        /></a>
+      </div>
+      <a href="https://codepen.io/angela-goncalves"
+        ><img src="/images/codepenicon.svg" alt="logo's restaurant"
+      /></a>
+      <a href="mailto:angelakgo20@gmail.com"
+        ><img src="/images/envelope.svg" alt="logo's restaurant"
+      /></a>
+      <a href="https://github.com/angela-goncalves/fcc-survey-form-page"
+        ><img src="/images/github.svg" alt="logo's restaurant"
+      /></a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
