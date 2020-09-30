@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="Description"
+      content="Freecodecamp Responsive Web Design project "
+    />
+    <title>Survey-form: angela-goncalves's freecodecamp project</title>
     <link rel="stylesheet" href="survey-form.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
@@ -20,14 +24,14 @@
   </head>
   <body class="body-style">
     <nav class="main-style">
-      <a href="index.html"
-        ><img src="/images/wine.svg" alt="logo's restaurant"
-      /></a>
+      <a href="index.html" target="_blank" rel="noopener">
+        <img src="/images/wine.svg" alt="logo's restaurant" />
+      </a>
       <ul>
-        <a href="#"><li>Menu</li></a>
-        <a href="#"><li>Reservation</li></a>
-        <a href="#"><li>Location</li></a>
-        <a href="#"><li>Contact</li></a>
+        <li><a href="#" target="_blank" rel="noopener">Menu</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Reservation</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Location</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Contact</a></li>
       </ul>
     </nav>
     <main class="main-style surv-form-main">
@@ -103,36 +107,36 @@
             />
             Very satisfied
           </label>
-          <label for="service" class="serv-categ serv-categ-font">
+          <label for="service1" class="serv-categ serv-categ-font">
             <input
-              id="service"
+              id="service1"
               type="radio"
               name="satisfied"
               value="satisfied"
             />
             Satisfied
           </label>
-          <label for="service" class="serv-categ serv-categ-font">
+          <label for="service2" class="serv-categ serv-categ-font">
             <input
-              id="service"
+              id="service2"
               type="radio"
               name="satisfied"
               value="satisfied"
             />
             Neutral
           </label>
-          <label for="service" class="serv-categ serv-categ-font">
+          <label for="service3" class="serv-categ serv-categ-font">
             <input
-              id="service"
+              id="service3"
               type="radio"
               name="satisfied"
               value="satisfied"
             />
             Unsatisfied
           </label>
-          <label for="service" class="serv-categ serv-categ-font">
+          <label for="service4" class="serv-categ serv-categ-font">
             <input
-              id="service"
+              id="service4"
               type="radio"
               name="satisfied"
               value="satisfied"
@@ -151,36 +155,36 @@
             />
             Food
           </label>
-          <label for="categories" class="serv-categ serv-categ-font">
+          <label for="categories1" class="serv-categ serv-categ-font">
             <input
-              id="categories"
+              id="categories1"
               type="checkbox"
               name="categories"
               value="categories"
             />
             Service
           </label>
-          <label for="categories" class="serv-categ serv-categ-font">
+          <label for="categories2" class="serv-categ serv-categ-font">
             <input
-              id="categories"
+              id="categories2"
               type="checkbox"
               name="categories"
               value="categories"
             />
             Drinks
           </label>
-          <label for="categories" class="serv-categ serv-categ-font">
+          <label for="categories3" class="serv-categ serv-categ-font">
             <input
-              id="categories"
+              id="categories3"
               type="checkbox"
               name="categories"
               value="categories"
             />
             Atmosphere
           </label>
-          <label for="categories" class="serv-categ serv-categ-font">
+          <label for="categories4" class="serv-categ serv-categ-font">
             <input
-              id="categories"
+              id="categories4"
               type="checkbox"
               name="categories"
               value="categories"
@@ -189,8 +193,11 @@
           </label>
         </div>
         <div class="survey">
-          <p class="question">So, what do you think about our restaurant?</p>
+          <label for="opinion" class="question"
+            >So, what do you think about our restaurant?</label
+          >
           <textarea
+            id="opinion"
             class="opinion"
             name="textarea"
             rows="5"
@@ -210,18 +217,26 @@
     <footer>
       <div class="my-name">
         <p>Angela G.</p>
-        <a href="index.html"
-          ><img src="/images/wine.svg" alt="logo's restaurant"
-        /></a>
+        <a href="index.html" target="_blank" rel="noopener">
+          <img src="/images/wine.svg" alt="logo's restaurant" />
+        </a>
       </div>
-      <a href="https://codepen.io/angela-goncalves"
-        ><img src="/images/codepenicon.svg" alt="logo's restaurant"
+      <a
+        href="https://codepen.io/angela-goncalves"
+        target="_blank"
+        rel="noreferrer"
+        ><img src="/images/codepenicon.svg" alt="angela's codepen profile"
       /></a>
-      <a href="mailto:angelakgo20@gmail.com"
-        ><img src="/images/envelope.svg" alt="logo's restaurant"
-      /></a>
-      <a href="https://github.com/angela-goncalves/fcc-survey-form-page"
-        ><img src="/images/github.svg" alt="logo's restaurant"
+      <a href="mailto:angelakgo20@gmail.com" target="_blank" rel="noreferrer">
+        <img src="/images/envelope.svg" alt="send an e-mail to angela" />
+      </a>
+      <a
+        href="https://github.com/angela-goncalves/fcc-survey-form-page"
+        target="_blank"
+        rel="noreferrer"
+        ><img
+          src="/images/github.svg"
+          alt="angela's github survey-form project"
       /></a>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
