@@ -46,6 +46,7 @@ nav img {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 li {
   margin: 10px;
@@ -141,7 +142,8 @@ button {
   height: 40px;
   font-family: var(--font-lato);
   font-size: 1.25rem;
-  color: white;
+  font-weight: 600;
+  color: #2c3258;
 }
 footer {
   background-color: black;
