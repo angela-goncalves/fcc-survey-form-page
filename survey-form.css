@@ -46,6 +46,7 @@ nav img {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 li {
   margin: 10px;
@@ -131,7 +132,7 @@ textarea::placeholder{
   margin: 20px;
 }
 button {
-  background-color: #e4b61a;
+  background-color:#c39e23;
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: #e4b61a;
@@ -141,7 +142,8 @@ button {
   height: 40px;
   font-family: var(--font-lato);
   font-size: 1.25rem;
-  color: white;
+  font-weight: 600;
+  color: #2c3258;
 }
 footer {
   background-color: black;
