@@ -21,32 +21,31 @@ body {
   display: grid;
   background-image: url(/images/restaurant.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
 }
-.main-style {
-  background-color: rgba(0, 0, 0, 0.75);
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
 }
 nav > ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  margin: 10px;
+  margin: 0px;
   padding: 0px;
 }
 nav img {
   width: 45px;
   height: auto;
-  margin: 10px 0px 0px 20px;
-}
-a {
-  text-decoration: none;
-  color: inherit;
+  margin-left: 20px;
 }
 li {
   margin: 10px;
@@ -54,10 +53,13 @@ li {
   font-family: var(--font-family-1);
   font-size: 1.1rem;
 }
+
+.main-style {
+  background-color: rgba(0, 0, 0, 0.75);
+}
 .surv-form-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 header {
@@ -88,6 +90,7 @@ form {
 input::placeholder {
   color: var(--answer-color);
   font-family: var(--font-family-2);
+  width: 100%;
 }
 select{
   color: var(--answer-color);
@@ -99,7 +102,7 @@ select{
   border-color: var(--border-color);
 }
 .answer-size {
-  width: 70%;
+  width: 100%;
   height: 45px;
   padding: 7px;
   font-size: 16px;
@@ -136,6 +139,13 @@ button {
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: #e4b61a;
+  transition: all 0.7s ease 0s;
+}
+button:hover{
+  background-color: #2EE59D;
+  border-color: #2EE59D;
+  box-shadow: 0px 10px 15px var(--primary-dark-green);
+  transform: translateY(-6px);
 }
 .word-submit {
   width: 150px;
@@ -160,7 +170,7 @@ footer img {
 .my-name {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  align-items: center;
   color: var(--font-color);
   margin: 10px 0px;
 }
